@@ -29,6 +29,16 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile6": {
+        "data": "hwQQABAAAAAR8f8R8f8R8f8fEf8fEf8f/x8R/x8R/x//HxH/HxH/HxHx/xHx/xHxEfH/EfH/EfER8f8R8f8R8f8fEf8fEf8f/x8R/x8R/x//HxH/HxH/HxHx/xHx/xHxEfH/EfH/EfER8f8R8f8R8f8fEf8fEf8f/x8R/x8R/x//HxH/HxH/Hw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "tile7": {
+        "data": "hwQQABAAAAAR8f8R8f8REf8fEf8fEf8f/x8R/x8R/x//HxH/HxH/HxHx/xHx/xHxEfH/EfH/EfER8f8R8f8R8f8fEf8fEf8f/x8R/x8R/x//HxH/HxH/HxHx/xHx/xHxEfH/EfH/EfER8f8R8f8R8f8fEf8fEf8f/x8R/x8R/x//HxH/HxH/Hw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
     "level": {
         "id": "level",
         "mimeType": "application/mkcd-tilemap",
@@ -49,7 +59,7 @@
             "sprites.castle.tilePath5",
             "sprites.castle.tileGrass1",
             "myTiles.tile3",
-            "myTiles.tile2"
+            "myTiles.tile6"
         ]
     },
     "*": {

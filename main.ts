@@ -1,30 +1,3 @@
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile2, function (sprite, location) {
-    music.powerUp.play()
-    if (Level == 1) {
-        Level = 2
-        tiles.setTilemap(tiles.createTilemap(hex`1000100002020202020202020202020202020202010101010301010101010101010103020101010101010101010301010101010202020202020202020202020202010102010101010101010101010101020101020101010101010101010101010203010201020202020202020202020202010102010203010101010101010101010101020102010102020202020202020202020201020101020101010101010101010101010201010201010101010101010101010102010302010101010101010101010101020101020202020202020202020202010201010101010103010101010101040102010301010101010101010101010401020202020202020202020202020202`, img`
-            2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-            . . . . . . . . . . . . . . . 2 
-            . . . . . . . . . . . . . . . 2 
-            2 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 
-            . . . . . . . . . . . . 2 . . 2 
-            . . . . . . . . . . . . 2 . . 2 
-            . 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 
-            . 2 . . . . . . . . . . . . . 2 
-            . 2 . . 2 2 2 . . . 2 2 2 2 2 2 
-            . 2 . . 2 . . . . . . . . . . . 
-            . 2 . . 2 . . . . . . . . . . . 
-            . 2 . . 2 . . . . . . . . . . . 
-            . 2 . . 2 2 2 2 2 2 2 2 2 2 2 . 
-            . 2 . . . . . . . . . 2 . . . . 
-            . 2 . . . . . . . . . 2 . . . . 
-            . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-            `, [myTiles.transparency16,sprites.castle.tilePath5,sprites.castle.tileGrass1,myTiles.tile3,myTiles.tile1], TileScale.Sixteen))
-        mySprite1.setPosition(10, 25)
-        info.startCountdown(35)
-        info.setLife(3)
-    }
-})
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile3, function (sprite, location) {
     if (Level <= 3) {
         info.changeLifeBy(-1)
@@ -132,6 +105,33 @@ controller.up.onEvent(ControllerButtonEvent.Released, function () {
     if (direction1 == "U") {
         direction1 = "N"
         mySprite1.setVelocity(0, 0)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile6, function (sprite, location) {
+    music.powerUp.play()
+    if (Level == 1) {
+        Level = 2
+        tiles.setTilemap(tiles.createTilemap(hex`1000100002020202020202020202020202020202010101010301010101010101010103020101010101010101010301010101010202020202020202020202020202010102010101010101010101010101020101020101010101010101010101010203010201020202020202020202020202010102010203010101010101010101010101020102010102020202020202020202020201020101020101010101010101010101010201010201010101010101010101010102010302010101010101010101010101020101020202020202020202020202010201010101010103010101010101040102010301010101010101010101010401020202020202020202020202020202`, img`
+            2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+            . . . . . . . . . . . . . . . 2 
+            . . . . . . . . . . . . . . . 2 
+            2 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 
+            . . . . . . . . . . . . 2 . . 2 
+            . . . . . . . . . . . . 2 . . 2 
+            . 2 2 2 2 2 2 2 2 2 2 2 2 . . 2 
+            . 2 . . . . . . . . . . . . . 2 
+            . 2 . . 2 2 2 . . . 2 2 2 2 2 2 
+            . 2 . . 2 . . . . . . . . . . . 
+            . 2 . . 2 . . . . . . . . . . . 
+            . 2 . . 2 . . . . . . . . . . . 
+            . 2 . . 2 2 2 2 2 2 2 2 2 2 2 . 
+            . 2 . . . . . . . . . . . . 2 . 
+            . 2 . . . . . . . . . . . . 2 . 
+            . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+            `, [myTiles.transparency16,sprites.castle.tilePath5,sprites.castle.tileGrass1,myTiles.tile3,myTiles.tile1], TileScale.Sixteen))
+        mySprite1.setPosition(10, 25)
+        info.startCountdown(25)
+        info.setLife(3)
     }
 })
 controller.down.onEvent(ControllerButtonEvent.Repeated, function () {

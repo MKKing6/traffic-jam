@@ -12,6 +12,10 @@ namespace myTiles {
     export const tile4 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile5 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile6 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile7 = image.ofBuffer(hex``);
 
     helpers.registerTilemapFactory(function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -50,7 +54,7 @@ namespace myTiles {
 2 2 . . . . . . . . . . . . . . 
 2 . 2 . . . . . . . . . . . . . 
 . . . 2 2 2 2 2 2 2 2 2 2 2 2 2 
-`, [myTiles.transparency16,sprites.castle.tilePath5,sprites.castle.tileGrass1,myTiles.tile3,myTiles.tile2], TileScale.Sixteen)
+`, [myTiles.transparency16,sprites.castle.tilePath5,sprites.castle.tileGrass1,myTiles.tile3,myTiles.tile6], TileScale.Sixteen)
         }
         return null;
     })
